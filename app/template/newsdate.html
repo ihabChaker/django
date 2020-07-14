@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block title %}
+news date
+{% endblock %}
+{% block body %}
+<h1>this is our news filtered by date</h1>
+<h3>these are news for year {{ year }}</h3>
+
+{% for news in list %}
+<h1>{{news.title}}</h1>
+<h3>{{news.author}}</h3>
+<p>{{news.description}}</p>
+{% endfor %}
+{% endblock %}
